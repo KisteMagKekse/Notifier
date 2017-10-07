@@ -1,0 +1,43 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/pref_sms_general_title"
+        android:key="pref_key_general_settings"
+        >
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="enable_checking"
+            android:summary="@string/pref_description_enable_checking"
+            android:title="@string/pref_title_enable_checking" />
+        <ListPreference
+            android:key="check_time"
+            android:title="@string/pref_title_check_time"
+            android:summary="@string/pref_description_check_time"
+            android:entries="@array/pref_check_time_titles"
+            android:entryValues="@array/pref_check_time_values"
+            android:defaultValue="2"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_sms_notification_title"
+        android:key="pref_key_notification_settings"
+        >
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="enable_notifications"
+            android:summary="@string/pref_description_enable_notifications"
+            android:title="@string/pref_title_enable_notifications" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_sms_datausage_title"
+        android:key="pref_key_datausage_settings"
+        >
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="only_in_wifi"
+            android:summary="@string/pref_description_only_in_wifi"
+            android:title="@string/pref_title_only_in_wifi" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
